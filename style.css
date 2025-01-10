@@ -3,7 +3,41 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* CSS Reset for Margins and Padding */
+    scroll-behavior: smooth;
 }
+/* Title Card Section Styling */
+#title_card {
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  #title_card h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  #title_card p {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  
+  .cta-button {
+    margin-top: 0px;
+    color: white;
+    background-color: #d73007;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  .cta-button:hover {
+    background-color: #000;
+  }
 
 /* Navbar Styling */
 .navbar {
@@ -34,10 +68,13 @@ body {
     text-decoration: none;
     font-size: 17px;
     margin: 0 10px;
-    padding: 8px 12px;
+    padding: 4px 6px;
     transition: background-color 0.3s;
     border-radius: 4px;
   }
+.navbar a:last-of-type {
+    margin-right: 2rem; /* Adjust this value to move it to the left or right */
+}
 
 /* Hover effect for links */
 .navbar a:hover {
