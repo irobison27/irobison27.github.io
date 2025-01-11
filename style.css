@@ -4,45 +4,53 @@ body {
     padding: 0;
     box-sizing: border-box; /* CSS Reset for Margins and Padding */
     scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
 }
 /* Title Card Section Styling */
 #title_card {
     height: 100vh;
-    background-color: #333;
-    color: white;
+    background: url('images/background.jpg') center/cover no-repeat, linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    color: #e0e0e0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
-  }
-  #title_card h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-  #title_card p {
+}
+#title_card h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    color: #f4a261; /* Earthy orange to match volcanic colors */
+}
+#title_card p {
     font-size: 1.5rem;
     margin-top: 0;
-  }
-  
-  .cta-button {
-    margin-top: 0px;
-    color: white;
-    background-color: #d73007;
+    color: #b0b0b0;
+}
+
+.cta-button {
+    margin-top: 20px;
+    color: #000;
+    background-color: #f4a261;
     padding: 12px 20px;
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
-  }
-  .cta-button:hover {
-    background-color: #000;
-  }
+}
+.cta-button:hover {
+    background-color: #e76f51; /* Slightly darker orange for hover */
+    color: #fff;
+}
 
 /* Navbar Styling */
 .navbar {
     width: 100%;
-    background-color: #555;
+    background-color: #333; /* Dark background for navbar */
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -52,44 +60,123 @@ body {
     top: 0;
     left: 0;
     z-index: 1000;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 
-  .navbar .name {
+.navbar .name {
     font-size: 1.5rem;
-    color: white;
+    color: #f4a261; /* Earthy orange for name text */
     font-weight: bold;
     margin-right: auto;
-  }
+}
 
 /* Navbar Anchor Links */
 .navbar a {
-    color: white;
+    color: #e0e0e0; /* Light gray for navbar links */
     text-decoration: none;
     font-size: 17px;
     margin: 0 10px;
     padding: 4px 6px;
     transition: background-color 0.3s;
-    border-radius: 4px;
-  }
-.navbar a:last-of-type {
-    margin-right: 2rem; /* Adjust this value to move it to the left or right */
 }
 
-/* Hover effect for links */
+.navbar a:last-of-type {
+    margin-right: 2rem; /* Adjust spacing for Contact link */
+}
+
 .navbar a:hover {
-    background-color: #000;
-  }
+    background-color: #f4a261; /* Earthy orange on hover */
+}
 
 /* Active link */
 .navbar a.active {
-    background-color: #d73007;
-  }
+    background-color: #1f1f1f; /* Dark gray background for active link */
+}
+
+/* Footer Styling */
+.info_footer {
+    background-color: #333; /* Dark footer background */
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* Footer Content Layout */
+.footer-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    max-width: 1200px;
+}
+
+/* Logo Styling */
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f4a261; /* Earthy orange */
+    background-color: #111;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+/* Links Section */
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links h4 {
+    margin-right: 15px;
+    font-size: 1rem;
+    color: #e0e0e0;
+    text-transform: uppercase;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Footer Bottom (Copyright) */
+.footer-bottom {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    text-align: center;
+}
 
 /* Mobile Screen Size Query */
 @media screen and (max-width: 768px) {
-    .navbar {
+    .footer-content {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 }
