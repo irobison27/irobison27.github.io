@@ -10,6 +10,139 @@ body {
     background-color: #1a1a1a;
     color: #e0e0e0;
 }
+main section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 1200px;
+    background-color: #222; 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+
+}
+main section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f4a261;
+    text-transform: uppercase;
+}
+main section p {
+    font-size: 1.1rem;
+    line-height: 1;
+    margin-bottom: 5px;
+    text-align:left;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-category {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #e76f51;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    font-size: 1.25rem;
+    margin-bottom: 8px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.skill-category li::before {
+    content: '•';
+    color: #f4a261;
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #f4a261;
+}
+
+.project-card p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 15px;
+    color: #b0b0b0;
+}
+
+.project-card a {
+    display: inline-block;
+    color: #000;
+    background-color: #f4a261;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: #e76f51;
+    color: #fff;
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: center;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#contact ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #b0b0b0;
+}
+
+#contact ul li a {
+    color: #f4a261;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact ul li a:hover {
+    color: #e76f51;
+}
 /* Title Card Section Styling */
 #title_card {
     height: 100vh;
@@ -41,6 +174,7 @@ body {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s;
+    font-size: 20px;
 }
 .cta-button:hover {
     background-color: #e76f51; /* Slightly darker orange for hover */
@@ -126,13 +260,13 @@ body {
 }
 
 .logo-text {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #f4a261; /* Earthy orange */
     background-color: #111;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -145,12 +279,12 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .footer-links h4 {
-    margin-right: 15px;
-    font-size: 1rem;
+    margin-right: 5px;
+    font-size: 1.5rem;
     color: #e0e0e0;
     text-transform: uppercase;
 }
@@ -169,7 +303,7 @@ body {
 /* Footer Bottom (Copyright) */
 .footer-bottom {
     margin-top: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
 }
 
